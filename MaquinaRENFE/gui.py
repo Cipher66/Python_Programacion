@@ -10,6 +10,14 @@ precios = {
     "mensual" : [10, 20, 30, 40, 50, 60]
     }
 
+#Zonas en inglés
+
+zones = {
+    "Zone1" : ["Urnieta","Donosti","Pasaia","Irun", "Errenteria", "Antxo"],
+    "Zone2" : ["Bilbao", "Vitoria", "Azkoitia", "Azpeitia", "Hondarribia", "Pamplona"],
+    "Zone3" : ["Gijón", "Vigo", "Orense", "León", "Burgos", "Oviedo"]
+    }
+
 """ 
 def ejecutarMenu(destinos):
     #Comentario#
@@ -68,9 +76,26 @@ def destino_precios(opcion,zona,destino):
     #print(preciosOpcion[indPobZona])
     return "El viaje a "+destino+ " cuesta "+str(preciosOpcion[indPobZona])+" Euros"
 
-    #print("El viaje a "+destino+" cuesta "+str(preciosOpcion[indPobZona])+" Euros")
+def destino_preciosIngles(opcion,zona,destino):
+    #print(zonas)
+    zonaSel=zonas.get(zona)
+    #print(zonaSel)
+
+    indPobZona=zonaSel.index(destino)
+    #print(indPobZona)
+    preciosOpcion=precios.get(opcion)
+    #print(preciosOpcion)
+    #kk3=preciosOpcion.get(opcion)
+    #print(preciosOpcion[indPobZona])
+    return "The trip to "+destino+ " costs "+str(preciosOpcion[indPobZona])+" Euros"
+
+
+    
+
     """
+    indPobZona=
     if destino == "Urnieta":
         Urnieta_precio = precios.get["ida"]
         print ("El viaje a "+destino+"cuesta "+Urnieta_precio)
+    print("El viaje a "+destino+" cuesta "+str(preciosOpcion[indPobZona])+" Euros")
     """
