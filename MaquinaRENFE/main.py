@@ -1,5 +1,6 @@
 
 
+
 #import gui as em
 import gui as em
 
@@ -192,9 +193,9 @@ if idioma == "English":
 """"Idioma Francés"""
 if idioma == "Français":
     print("Choisissez: ")
-    print("1. Aller: ")
-    print("2. Aller-retour: ")
-    print("3. Mensuel: ")
+    print("1. Aller ")
+    print("2. Aller-retour ")
+    print("3. Mensuel ")
 
     opcion = input("votre choix: ")
 
@@ -208,8 +209,80 @@ if idioma == "Français":
             print("Prix: ")
             print(em.print_preciosIda())
             destino = input("Quelle est votre destination?")
-            print(em.destino_precios(opcionTexto,zona,destino))
+            print(em.destino_preciosFrances(opcionTexto,zona,destino))
 
+        if zona == "Zone2":
+            print("Destinations: ")
+            print(em.print_poblacionesZona2())
+            print("Prix: ")
+            print(em.print_preciosIda())
+            destino = input("Quelle est votre destination?")
+            print(em.destino_preciosFrances(opcionTexto,zona,destino))
+
+        if zona == "Zone3":
+            print("Destinations: ")
+            print(em.print_poblacionesZona3())
+            print("Prix: ")
+            print(em.print_preciosIda())
+            destino = input("Quelle est votre destination?")
+            print(em.destino_preciosFrances(opcionTexto,zona,destino))
+
+
+    """Opcion de vuelta"""
+    if opcion == "2":
+        opcionTexto="aller-retour"
+        zona = input("Entrez votre région: ")
+        if zona == "Zone1":
+            print("Destinations: ")
+            print(em.print_poblacionesZona1())
+            print("Prix: ")
+            print(em.print_preciosVuelta())
+            destino = input("Quelle est votre destination?")
+            print(em.destino_preciosFrances(opcionTexto,zona,destino))
+
+        if zona == "Zone2":
+            print("Destinations: ")
+            print(em.print_poblacionesZona2())
+            print("Prix: ")
+            print(em.print_preciosVuelta())
+            destino = input("Quelle est votre destination?")
+            print(em.destino_preciosFrances(opcionTexto,zona,destino))
+
+        if zona == "Zone3":
+            print("Destinations: ")
+            print(em.print_poblacionesZona3())
+            print("Prix: ")
+            print(em.print_preciosVuelta())
+            destino = input("Quelle est votre destination?")
+            print(em.destino_preciosFrances(opcionTexto,zona,destino))
+
+    """Opcion mensual"""
+    if opcion == "3":
+        opcionTexto="mensuel"
+        zona = input("Entrez votre région: ")
+        if zona == "Zone1":
+            print("Destinations: ")
+            print(em.print_poblacionesZona1())
+            print("Prix: ")
+            print(em.print_preciosMensual())
+            destino = input("Quelle est votre destination?")
+            print(em.destino_preciosFrances(opcionTexto,zona,destino))
+
+        if zona == "Zone2":
+            print("Destinations: ")
+            print(em.print_poblacionesZona2())
+            print("Prix: ")
+            print(em.print_preciosMensual())
+            destino = input("Quelle est votre destination?")
+            print(em.destino_preciosFrances(opcionTexto,zona,destino))
+        
+        if zona == "Zone3":
+            print("Destinations: ")
+            print(em.print_poblacionesZona3())
+            print("Prix: ")
+            print(em.print_preciosMensual())
+            destino = input("Quelle est votre destination?")
+            print(em.destino_preciosFrances(opcionTexto,zona,destino))
 
 """
 def print_zonas():
