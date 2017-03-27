@@ -89,6 +89,19 @@ def destino_preciosIngles(opcion,zona,destino):
     #print(preciosOpcion[indPobZona])
     return "The trip to "+destino+ " costs "+str(preciosOpcion[indPobZona])+" Euros"
 
+def destino_preciosFrances(opcion,zona,destino):
+    #print(zonas)
+    zonaSel=zonas.get(zona)
+    #print(zonaSel)
+
+    indPobZona=zonaSel.index(destino)
+    #print(indPobZona)
+    preciosOpcion=precios.get(opcion)
+    #print(preciosOpcion)
+    #kk3=preciosOpcion.get(opcion)
+    #print(preciosOpcion[indPobZona])
+    return "Le voyage à"+destino+ " vaut "+str(preciosOpcion[indPobZona])+" Euros"
+
 
     
 
