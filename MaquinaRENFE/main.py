@@ -11,7 +11,7 @@ print("Ongi etorri RENFEko billete erosketako makinara")
 
 idioma = input("Su idioma/Your language/Sa langue/Zure hizkuntza:")
 
-"""Idioma Español"""
+"""Idioma Castellano"""
 if idioma == "Español":
     print("Elija una opción:")
     print("1. Ida")
