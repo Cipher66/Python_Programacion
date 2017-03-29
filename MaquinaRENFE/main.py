@@ -1,7 +1,4 @@
-
-
-
-#import gui as em
+﻿#import gui as em
 import gui as em
 
 print("Bienvenido a la estación de compra de billetes de RENFE")
