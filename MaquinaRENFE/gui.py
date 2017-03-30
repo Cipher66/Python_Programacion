@@ -18,6 +18,44 @@ zones = {
     "Zone3" : ["Gijón", "Vigo", "Orense", "León", "Burgos", "Oviedo"]
     }
 
+
+def print_poblacionesZona1():
+        return zonas["Zona1"]
+
+def print_poblacionesZona2():
+        return zonas["Zona2"]
+
+def print_poblacionesZona3():
+        return zonas["Zona3"]  
+
+def print_preciosIda():
+        return precios["ida"]
+
+def print_preciosVuelta():
+        return precios["ida/vuelta"]
+        
+def print_preciosMensual():
+        return precios["mensual"]
+
+def destino_precios(opcion,zona,destino):
+    zonaSel=zonas.get(zona)
+    indPobZona=zonaSel.index(destino)
+    preciosOpcion=precios.get(opcion)
+    return "El viaje a "+destino+ " cuesta "+str(preciosOpcion[indPobZona])+" Euros"
+
+def destino_preciosIngles(opcion,zona,destino):
+    zonaSel=zonas.get(zona)
+    indPobZona=zonaSel.index(destino)
+    preciosOpcion=precios.get(opcion)
+    return "The trip to "+destino+ " costs "+str(preciosOpcion[indPobZona])+" Euros"
+    
+def destino_preciosFrances(opcion,zona,destino):
+    zonaSel=zonas.get(zona)
+    indPobZona=zonaSel.index(destino)
+    preciosOpcion=precios.get(opcion)
+    return "Le voyage à"+destino+ " vaut "+str(preciosOpcion[indPobZona])+" Euros"
+
+
 """ 
 def ejecutarMenu(destinos):
     #Comentario#
@@ -26,89 +64,27 @@ def ejecutarMenu(destinos):
     print("2. Ida y vuelta")
     print("3. Bono mensual") 
 
-"""
-
-
-def print_poblacionesZona1():
-    #for z in zonas.values():
-        #print(zonas["Zona1"])
-        #print(str(z))
-        return zonas["Zona1"]
-
-def print_poblacionesZona2():
-    #for z in zonas.values():
-        #print(zonas["Zona2"])
-        #print(str(z))
-        return zonas["Zona2"]
-
-def print_poblacionesZona3():
-    #for z in zonas.values():
-        #print(zonas["Zona3"])
-        #print(str(z))
-        return zonas["Zona3"]  
-
-def print_preciosIda():
-    #for p in precios.values():
-        #print (precios["ida"])
-        #print(str(p))
-        return precios["ida"]
-
-def print_preciosVuelta():
-    #for p in precios.values():
-        #print(precios["ida/vuelta"])
-        return precios["ida/vuelta"]
-        
-def print_preciosMensual():
-    #for p in precios.values():
-        #print(precios["mensual"])
-        return precios["mensual"]
-
-def destino_precios(opcion,zona,destino):
-    #print(zonas)
-    zonaSel=zonas.get(zona)
-    #print(zonaSel)
-    
-    indPobZona=zonaSel.index(destino)
-    #print(indPobZona)
-    preciosOpcion=precios.get(opcion)
-    #print(preciosOpcion)
-    #kk3=preciosOpcion.get(opcion)
-    #print(preciosOpcion[indPobZona])
-    return "El viaje a "+destino+ " cuesta "+str(preciosOpcion[indPobZona])+" Euros"
-
-def destino_preciosIngles(opcion,zona,destino):
-    #print(zonas)
-    zonaSel=zonas.get(zona)
-    #print(zonaSel)
-
-    indPobZona=zonaSel.index(destino)
-    #print(indPobZona)
-    preciosOpcion=precios.get(opcion)
-    #print(preciosOpcion)
-    #kk3=preciosOpcion.get(opcion)
-    #print(preciosOpcion[indPobZona])
-    return "The trip to "+destino+ " costs "+str(preciosOpcion[indPobZona])+" Euros"
-
-def destino_preciosFrances(opcion,zona,destino):
-    #print(zonas)
-    zonaSel=zonas.get(zona)
-    #print(zonaSel)
-
-    indPobZona=zonaSel.index(destino)
-    #print(indPobZona)
-    preciosOpcion=precios.get(opcion)
-    #print(preciosOpcion)
-    #kk3=preciosOpcion.get(opcion)
-    #print(preciosOpcion[indPobZona])
-    return "Le voyage à"+destino+ " vaut "+str(preciosOpcion[indPobZona])+" Euros"
-
 
     
 
-    """
-    indPobZona=
-    if destino == "Urnieta":
+indPobZona=
+ if destino == "Urnieta":
         Urnieta_precio = precios.get["ida"]
         print ("El viaje a "+destino+"cuesta "+Urnieta_precio)
     print("El viaje a "+destino+" cuesta "+str(preciosOpcion[indPobZona])+" Euros")
-    """
+"""
+
+    #print(zonas)
+    #print(zonaSel)
+    #print(indPobZona)
+    #print(preciosOpcion)
+    #kk3=preciosOpcion.get(opcion)
+    #print(preciosOpcion[indPobZona])
+
+    #for z in zonas.values():
+        #print(zonas["Zona(Numero de zona))"])
+        #print(str(z))
+
+    #for p in precios.values():
+        #print (precios["(Tipo de viaje))"])
+        #print(str(p))
