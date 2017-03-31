@@ -10,14 +10,14 @@ def hello():
     
     nombre = "Sergio"
     apellido = "Chávez"
-    y = gt.guiTest(2, 5)
-    return render_template("index.html", name = nombre)
+    #y = gt.guiTest(2, 5)
+    return render_template("index.html", name = nombre, apellido = apellido)
     
     #return "Tu nombre es "+nombre+" y tu apellio es "+apellido
 
-@app.route("/suma/<x>/<y>")
+"""@app.route("/suma/<x>/<y>")
 def sumaxy(x, y):
-    return gt.guiTest(x, y)
+    return gt.guiTest(x, y)"""
     
 @app.route("/nombre/<nombre>")
 def get_name(nombre):
