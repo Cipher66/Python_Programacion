@@ -22,7 +22,7 @@ def sumaxy(x, y):
 @app.route("/nombre/<nombre>")
 def get_name(nombre):
     return render_template("index.html", name = nombre)
-
+    
 
 if __name__ == "__main__":
     app.run()
