@@ -20,10 +20,18 @@ def hello():
 def sumaxy(x, y):
     return gt.guiTest(x, y)"""
     
-@app.route("/nombre/<nombre>")
+@app.route("/nombre/es")
 def get_name(nombre):
     return render_template("index.html", name = nombre)
-    
 
-if __name__ == "__main__":
+@app.route("/estaciones")
+def estaciones():
+    estaciones = gui.estaciones()
+    return render_template("estaciones.html", estaciones = estaciones)
+    return str(estaciones)
+
+
+
+"""if __name__ == "__main__":
     app.run()
+    """
