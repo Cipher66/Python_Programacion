@@ -27,7 +27,7 @@ def get_name(nombre):
 @app.route("/estaciones")
 def estaciones():
     estaciones = gui.estaciones()
-    return render_template("estaciones.html", estaciones = estaciones)
+    #return render_template("estaciones.html", estaciones = estaciones)
     return str(estaciones)
 
 
