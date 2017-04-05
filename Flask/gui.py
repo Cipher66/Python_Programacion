@@ -20,7 +20,9 @@ zones = {
 
 def print_poblaciones(zona):
     return zonas["zona"]
-
+    
+def estaciones():
+    return["Bilbao","Orense"]
 
 """ 
 def print_poblacionesZona1():

@@ -5,7 +5,7 @@ import gui
 app = Flask(__name__)
 app.debug = True
 
-@app.route("/test")
+@app.route("/")
 def hello():
     
     nombre = "Sergio"
