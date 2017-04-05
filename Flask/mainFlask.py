@@ -1,6 +1,6 @@
 from flask import Flask
 from flask import render_template
-import guiTest as gt
+import gui
 
 app = Flask(__name__)
 app.debug = True
@@ -10,6 +10,7 @@ def hello():
     
     nombre = "Sergio"
     apellido = "Chávez"
+    gui.print_preciosIda
     #y = gt.guiTest(2, 5)
     return render_template("index.html", name = nombre, apellido = apellido)
     
