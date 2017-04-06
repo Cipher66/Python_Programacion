@@ -23,7 +23,7 @@ if idioma == "Español":
         zona = input("Escriba su zona: ")
         if zona == "Zona1":
             print("Destinos: ")
-            print(em.print_poblacionesZona1())
+            print(em.print_poblaciones(zona))
             print("Precios: ")
             print(em.print_preciosIda())
             destino = input("¿Cual es su destino? ")
@@ -31,7 +31,7 @@ if idioma == "Español":
     
         if zona == "Zona2":
                 print("Destinos: ")
-                print(em.print_poblacionesZona2())
+                print(em.print_poblaciones(zona))
                 print("Precios: ")
                 print(em.print_preciosIda())
                 destino = input("¿Cual es su destino? ")
@@ -39,7 +39,7 @@ if idioma == "Español":
     
         if zona == "Zona3":
             print("Destinos: ")
-            print(em.print_poblacionesZona3())
+            print(em.print_poblaciones(zona))
             print("Precios: ")
             print(em.print_preciosIda())
             destino = input("¿Cual es su destino? ")
@@ -52,7 +52,7 @@ if idioma == "Español":
         zona = input("Escriba su zona: ")
         if zona == "Zona1":
             print("Destinos: ")
-            print(em.print_poblacionesZona1())
+            print(em.print_poblaciones(zona))
             print("Precios: ")
             print(em.print_preciosVuelta())
             destino = input("¿Cual es su destino? ")
@@ -60,7 +60,7 @@ if idioma == "Español":
     
         if zona == "Zona2":
             print("Destinos: ")
-            print(em.print_poblacionesZona2())
+            print(em.print_poblaciones(zona))
             print("Precios: ")
             print(em.print_preciosVuelta())
             destino = input("¿Cual es su destino? ")
@@ -68,7 +68,7 @@ if idioma == "Español":
     
         if zona == "Zona3":
             print("Destinos: ")
-            print(em.print_poblacionesZona3())
+            print(em.print_poblaciones(zona))
             print("Precios: ")
             print(em.print_preciosVuelta())
             destino = input("¿Cual es su destino? ")
@@ -81,7 +81,7 @@ if idioma == "Español":
         zona = input("Escriba su zona: ")
         if zona == "Zona1":
             print("Destinos: ")
-            print(em.print_poblacionesZona1())
+            print(em.print_poblaciones(zona))
             print("Precios: ")
             print(em.print_preciosMensual())
             destino = input("¿Cual es su destino? ")
@@ -89,7 +89,7 @@ if idioma == "Español":
     
         if zona == "Zona2":
             print("Destinos: ")
-            print(em.print_poblacionesZona2())
+            print(em.print_poblaciones(zona))
             print("Precios: ")
             print(em.print_preciosMensual())
             destino = input("¿Cual es su destino? ")
@@ -97,7 +97,7 @@ if idioma == "Español":
     
         if zona == "Zona3":
             print("Destinos: ")
-            print(em.print_poblacionesZona3())
+            print(em.print_poblaciones(zona))
             print("Precios: ")
             print(em.print_preciosMensual())
             destino = input("¿Cual es su destino? ")

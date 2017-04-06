@@ -17,16 +17,17 @@ zones = {
     "Zone2" : ["Bilbao", "Vitoria", "Azkoitia", "Azpeitia", "Hondarribia", "Pamplona"],
     "Zone3" : ["Gijón", "Vigo", "Orense", "León", "Burgos", "Oviedo"]
     }
+def print_poblaciones(zona):
+    return zonas[zona]
 
-
-def print_poblacionesZona1():
+"""def print_poblacionesZona1():
         return zonas["Zona1"]
 
 def print_poblacionesZona2():
         return zonas["Zona2"]
 
 def print_poblacionesZona3():
-        return zonas["Zona3"]  
+        return zonas["Zona3"]  """
 
 def print_preciosIda():
         return precios["ida"]

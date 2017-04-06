@@ -19,7 +19,7 @@ zones = {
     }
 
 def print_poblaciones(zona):
-    return zonas["zona"]
+    return zonas[zona]
     
 def estaciones():
     return["Bilbao","Orense"]
@@ -34,6 +34,22 @@ def print_poblacionesZona2():
 def print_poblacionesZona3():
         return zonas["Zona3"] 
 """ 
+def for_estaciones():
+    c_estaciones=[]
+    for z,p in zonas.items():
+        for s in p:
+            c_estaciones.append(s)
+    return c_estaciones
+
+"""
+def for_estaciones():
+    c_estaciones=""
+    for z,p in zonas.items():
+        for s in p:
+            c_estaciones+="<a href='#'>"+s+"</a><br>"
+    print ("mis" + c_estaciones)
+    return c_estaciones
+"""
 
 def print_preciosIda():
         return precios["ida"]

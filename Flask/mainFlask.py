@@ -16,22 +16,22 @@ def hello():
     
     #return "Tu nombre es "+nombre+" y tu apellio es "+apellido
 
-"""@app.route("/suma/<x>/<y>")
+"""
+@app.route("/suma/<x>/<y>")
 def sumaxy(x, y):
-    return gt.guiTest(x, y)"""
+    return gt.guiTest(x, y)
+"""
     
-@app.route("/nombre/es")
+@app.route("/")
 def get_name(nombre):
     return render_template("index.html", name = nombre)
 
+
 @app.route("/estaciones")
 def estaciones():
-    estaciones = gui.estaciones()
+    estaciones = gui.for_estaciones()
     #return render_template("estaciones.html", estaciones = estaciones)
     return str(estaciones)
 
-
-
-"""if __name__ == "__main__":
+if __name__ == "__main__":
     app.run()
-    """

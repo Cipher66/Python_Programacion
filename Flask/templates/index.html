@@ -2,15 +2,22 @@
 
 <head>
     <title>Maquina de RENFE</title>
-    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <!--<link rel="stylesheet" type="text/css" href="static/style.css">-->
+    <style type="text/css">
+        body {
+            background-image: url("static/images/OarisCAF.jpg");
+            background-repeat: no-repeat;
+            float: right;
+        }
+    </style>
 </head>
 
 <body>
+
     <b>Hola, {{ name }} {{ apellido }}</b>
-    <br />
     <b>Elija su tipo de billete</b><br />
     <br />
-    <form action="/nombre/">
+    <form action="/estaciones">
         <input type="submit" value="Ida"><br />
     </form>
     <br />
@@ -21,6 +28,9 @@
     <form>
         <input type="submit" value="Mensual"><br />
     </form>
+
 </body>
 
 </html>
+
+<!--<form action="/estaciones">-->
