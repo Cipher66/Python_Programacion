@@ -34,6 +34,8 @@ def print_poblacionesZona2():
 def print_poblacionesZona3():
         return zonas["Zona3"] 
 """ 
+
+"""
 def for_estaciones():
     c_estaciones=[]
     for z,p in zonas.items():
@@ -42,6 +44,7 @@ def for_estaciones():
     return c_estaciones
 
 """
+
 def for_estaciones():
     c_estaciones=""
     for z,p in zonas.items():
@@ -49,11 +52,13 @@ def for_estaciones():
             c_estaciones+="<a href='#'>"+s+"</a><br>"
     print ("mis" + c_estaciones)
     return c_estaciones
-"""
+
+
 
 def print_preciosIda():
         return precios["ida"]
 
+"""
 def print_preciosVuelta():
         return precios["ida/vuelta"]
         
@@ -77,6 +82,9 @@ def destino_preciosFrances(opcion,zona,destino):
     indPobZona=zonaSel.index(destino)
     preciosOpcion=precios.get(opcion)
     return "Le voyage à"+destino+ " vaut "+str(preciosOpcion[indPobZona])+" Euros"
+
+
+"""
 
 
 
@@ -119,8 +127,8 @@ def ejecutarMenu(destinos):
     print("3. Bono mensual") 
 
 
-    
-
+""" 
+"""
 indPobZona=
  if destino == "Urnieta":
         Urnieta_precio = precios.get["ida"]
