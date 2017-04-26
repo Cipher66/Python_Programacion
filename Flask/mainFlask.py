@@ -33,20 +33,20 @@ def estaciones():
     #return render_template("estaciones.html", estaciones = estaciones)
     return str(estaciones)
 
-if __name__ == "__main__":
-    app.run()
+#if __name__ == "__main__":
+ #   app.run()
 
 @app.route("/estacionesV")
-def estaciones():
+def estacionesV():
     estaciones = gui.for_estaciones()
     #return render_template("estaciones.html", estaciones = estaciones)
     return str(estaciones)
 
-if __name__ == "__main__":
-    app.run()
+#if __name__ == "__main__":
+#    app.run()
 
 @app.route("/estacionesM")
-def estaciones():
+def estacionesM():
     estaciones = gui.for_estaciones()
     #return render_template("estaciones.html", estaciones = estaciones)
     return str(estaciones)
