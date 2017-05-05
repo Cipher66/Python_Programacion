@@ -1,0 +1,59 @@
+class Car():
+    def __init__(self, make, model, year, color='red'):
+        self.make = make
+        self.model = model
+        self.year = year
+        self.fuel_level = 0
+        self.fuel_capacity = 15
+        self.color = color
+    
+    def __str__(self):
+        return "Coche: modelo: %s, color: %s" % (self.model, self.color)
+    
+    def fill_tank(self, p=0):
+        self.fuel_level = 15
+
+class ElectricCar(Car):
+    def __init__(self, make, model, year):
+        super().__init__(make, model. year)
+        self.battery_size = 70
+        self.charge_level = 0
+
+class Warehouse():
+    """ Almacen de coches """
+    def __init__(self, name):
+        self.name = name
+        self.cars = []
+
+    def add_car(self, car):
+        self.cars.append(car)
+    
+    def remove_car(self, car):
+        pass
+        
+""" Crear los objetos """
+my_car = Car('Audi','a4',2016)
+my_car2 = Car('Audi','a4',2015)
+my_car3 = Car('Audi','a4',2014)
+my_electric_car = ElectricCar('Tesla','Model S','2016')
+
+""" Modificar los objetos """
+
+print("Modelo: " + my_electric_car.make, my_electric_car.model, my_electric_car.year)
+#my_car.year = 2017
+
+#print("Modelo: " + my_car.make, my_car.model, my_car.year) 
+
+""" Lista de coches """
+lista_coches = []
+lista_coches.append(my_car)
+lista_coches.append(my_car2)
+
+
+
+print(str(len(lista_coches)))
+
+if len(lista_coches) > 0:
+    print("hay coches")
+else:
+    print("No hay coches")
